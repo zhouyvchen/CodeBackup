@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"stdio.h": "c",
+			"time.h": "c"
+		},
+		"editor.fontFamily": "FiraCode Nerd Font, Source DejaVu",
+		"commentTranslate.source": "Bing",
+		"commentTranslate.multiLineMerge": true
+	}
+}

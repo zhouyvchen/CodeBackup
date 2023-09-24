@@ -1,0 +1,69 @@
+{
+    "workbench.colorTheme": "Eva Dark",
+    "workbench.iconTheme": "vscode-icons",
+    "editor.fontLigatures": true,
+    "editor.mouseWheelZoom": true,
+    "files.autoSave": "afterDelay",
+    "editor.fontFamily": "JetBrains Mono, Source DejaVu",
+    "editor.fontWeight": "300",
+    "workbench.preferredDarkColorTheme": "One Dark Pro",
+    //自定义编辑器语法颜色与字形
+    "editor.tokenColorCustomizations": {
+        //设置关键字颜色、字体样式（斜体，加粗）
+        "keywords": {
+            "fontStyle": "italic",
+        },
+        //设置变量颜色、字体样式
+        "variables": {
+            "fontStyle": "",
+        },
+        //设置字符串颜色、字体样式
+        "strings": {
+            "fontStyle": "italic"
+        },
+    },
+    "editor.fontSize": 18,
+    "markdown-preview-enhanced.codeBlockTheme": "codeblock.css",
+    "markdown-preview-enhanced.previewTheme": "one-light.css",
+    "[markdown]": {
+
+        "editor.defaultFormatter": "yzhang.markdown-all-in-one"
+    },
+    "[markdown]": {
+        // 快速补全
+        "editor.quickSuggestions": {
+            "other": true,
+            "comments": true,
+            "strings": true
+        },
+        // snippet 提示优先（看个人喜欢）
+        "editor.snippetSuggestions": "top",
+        "editor.tabCompletion": "on",
+        "files.trimTrailingWhitespace": false,
+        "editor.fontFamily": "霞鹜文楷, JetBrain Mono",
+        "editor.fontSize": 18,
+        "editor.lineNumbers": "interval"
+    },
+    "markdown.preview.fontFamily": "霞鹜文楷, JetBrain Mono",
+    "editor.snippetSuggestions": "top",
+    "liveServer.settings.donotShowInfoMsg": true,
+    "vsicons.dontShowNewVersionMessage": true,
+    "terminal.integrated.fontFamily": "FiraCode Nerd Font",
+    "redhat.telemetry.enabled": true,
+    "wordcount_cjk.activateLanguages": [
+
+        "markdown",
+        "plaintext"
+    ],
+    "workbench.list.smoothScrolling": true,
+    "terminal.integrated.smoothScrolling": true,
+    "editor.smoothScrolling": true,
+    "editor.cursorSmoothCaretAnimation": "on",
+    "[c]": {
+        "editor.defaultFormatter": "ms-vscode.cpptools"
+    },
+    "window.commandCenter": true,
+    "zenMode.fullScreen": false,
+    "leetcode.endpoint": "leetcode-cn",
+    "leetcode.workspaceFolder": "C:\\Users\\bokeboke\\.leetcode"
+}
