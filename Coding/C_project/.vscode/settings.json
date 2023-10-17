@@ -1,11 +1,12 @@
 {
-  "workbench.colorTheme": "Rosé Pine Dawn",
-  "workbench.iconTheme": "material-icon-theme",
+  "workbench.colorTheme": "Eva Dark",
+  "workbench.iconTheme": "vscode-icons",
   "editor.fontLigatures": true,
   "editor.mouseWheelZoom": true,
   "files.autoSave": "afterDelay",
-  "editor.fontFamily": "Monaco Nerd Font Mono, Source DejaVu",
+  "editor.fontFamily": "JetBrains Mono, Source DejaVu",
   "editor.fontWeight": "300",
+  "workbench.preferredDarkColorTheme": "One Dark Pro",
   //自定义编辑器语法颜色与字形
   "editor.tokenColorCustomizations": {
     //设置关键字颜色、字体样式（斜体，加粗）
