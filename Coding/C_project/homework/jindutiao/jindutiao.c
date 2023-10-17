@@ -4,7 +4,7 @@
 
 // ****************************** 配置 ***************************
 // 最后100%时的输出形式
-const char *LastStr = "[--------------------] 100%";
+const char* LastStr = "[--------------------] 100%";
 
 // 进度条标志，可以改用"*"或其它符号
 const char ProgressIcon = '-';
@@ -20,24 +20,18 @@ const int PrintInterval = 100000;
 // ****************************************************************
 
 // main函数
-int main(void)
-{
+int main(void) {
     printf("\nOutput recorded data: ");
 
-    for (int i = 0; i <= 100; ++i)
-    {
+    for (int i = 0; i <= 100; ++i) {
         // -------------- 打印进度条 --------------
         printf("[");
         int currentIndex = i / Step;
-        for (int j = 0; j < IconMaxNum; ++j)
-        {
-            if (j < currentIndex)
-            {
-                printf("%c", ProgressIcon); // 打印进度条标志
-            }
-            else
-            {
-                printf(" "); // 未达进度则打印空格
+        for (int j = 0; j < IconMaxNum; ++j) {
+            if (j < currentIndex) {
+                printf("%c", ProgressIcon);  // 打印进度条标志
+            } else {
+                printf(" ");  // 未达进度则打印空格
             }
         }
 
@@ -51,9 +45,8 @@ int main(void)
 
         usleep(PrintInterval);
 
-        for (int j = 0; j < strlen(LastStr); ++j)
-        {
-            printf("\b"); // 回删字符，让数字和进度条原地变化
+        for (int j = 0; j < strlen(LastStr); ++j) {
+            printf("\b");  // 回删字符，让数字和进度条原地变化
         }
 
         fflush(stdout);
