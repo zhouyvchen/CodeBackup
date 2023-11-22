@@ -1,6 +1,6 @@
 {
   "workbench.colorTheme": "GitHub Dark Dimmed",
-  "workbench.iconTheme": "vscode-icons",
+  "workbench.iconTheme": "material-icon-theme",
   "editor.fontLigatures": true,
   "editor.mouseWheelZoom": true,
   "files.autoSave": "afterDelay",
@@ -105,5 +105,6 @@
     "typeinfo": "cpp",
     "1.C": "cpp"
   },
-  "C_Cpp.errorSquiggles": "disabled"
+  "C_Cpp.errorSquiggles": "disabled",
+  "editor.suggest.snippetsPreventQuickSuggestions": false
 }
