@@ -1,8 +1,8 @@
-package src.HomeWork.Window;
+package HomeWork.Window;
 
 public class Main {
     public static void main(String[] args) {
-        Login L = new Login();
-        L.setVisible(true);
+        frame f = new frame();
+        f.setVisible(true);
     }
 }
