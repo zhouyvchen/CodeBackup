@@ -106,5 +106,6 @@
     "1.C": "cpp"
   },
   "C_Cpp.errorSquiggles": "disabled",
-  "editor.suggest.snippetsPreventQuickSuggestions": false
+  "editor.suggest.snippetsPreventQuickSuggestions": false,
+  "cmake.configureOnOpen": false
 }
