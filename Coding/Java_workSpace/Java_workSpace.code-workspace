@@ -5,6 +5,7 @@
     }
   ],
   "settings": {
-    "java.debug.settings.onBuildFailureProceed": true
+    "java.debug.settings.onBuildFailureProceed": true,
+    "editor.fontFamily": "Fira Code, Source DejaVu"
   }
 }

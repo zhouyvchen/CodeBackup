@@ -4,7 +4,7 @@
   "editor.fontLigatures": true,
   "editor.mouseWheelZoom": true,
   "files.autoSave": "afterDelay",
-  "editor.fontFamily": "JetBrains Mono, Source DejaVu",
+  "editor.fontFamily": "Fira Code, Source DejaVu",
   "editor.fontWeight": "300",
   "workbench.preferredDarkColorTheme": "One Dark Pro",
   //自定义编辑器语法颜色与字形
