@@ -33,57 +33,47 @@ typedef struct {
 
 // 创建图的邻接表
 void CreateAdj(AdjGraph* G, int A[MAXV][MAXV], int n, int e) {
-    G->n = n;  // 设置图的顶点数
-    G->e = e;  // 设置图的边数
+    G->n = n;
+    G->e = e;
 
-    // 初始化所有顶点的第一条边为NULL
     for (int i = 0; i < n; i++) {
         G->adjlist[i].firstarc = NULL;
     }
 
-    // 根据邻接矩阵创建邻接表
     for (int i = 0; i < n; i++) {
         for (int j = n - 1; j >= 0; j--) {
-            // 如果存在边
             if (A[i][j] != INF) {
-                // 创建新的边节点
                 ArcNode* arcNode = (ArcNode*)malloc(sizeof(ArcNode));
-                arcNode->adjvex = j;        // 设置邻接点编号
-                arcNode->weight = A[i][j];  // 设置权值
-                arcNode->nextarc =
-                    G->adjlist[i].firstarc;  // 将新节点插入到链表的头部
-                G->adjlist[i].firstarc = arcNode;  // 更新头节点的第一条边
+                arcNode->adjvex = j;
+                arcNode->weight = A[i][j];
+                arcNode->nextarc = G->adjlist[i].firstarc;
+                G->adjlist[i].firstarc = arcNode;
             }
         }
     }
 }
 
-// 输出邻接表G
 void DispAdj(AdjGraph* G) {
     printf("邻接表：\n");
-    // 遍历所有顶点
     for (int i = 0; i < G->n; i++) {
-        ArcNode* arcNode = G->adjlist[i].firstarc;  // 获取顶点的第一条边
-        printf("顶点 %d:", i);
-        // 遍历顶点的所有边
+        ArcNode* arcNode = G->adjlist[i].firstarc;
         while (arcNode != NULL) {
-            printf(" -> %d (%d)", arcNode->adjvex,
-                   arcNode->weight);     // 打印邻接点编号和权值
-            arcNode = arcNode->nextarc;  // 转到下一条边
+            printf(" -> %d (%d)", arcNode->adjvex, arcNode->weight);
+            arcNode = arcNode->nextarc;
         }
         printf("\n");
     }
 }
 
 int main() {
-    AdjGraph G;                       // 创建邻接表
-    int adjacencyMatrix[MAXV][MAXV];  // 创建邻接矩阵
-    int n, e;                         // 顶点数和边数
+    AdjGraph G;
+    int adjacencyMatrix[MAXV][MAXV];
+    int n, e;
 
     printf("请输入顶点数：");
-    scanf("%d", &n);  // 读取顶点数
+    scanf("%d", &n);
     printf("请输入边数：");
-    scanf("%d", &e);  // 读取边数
+    scanf("%d", &e);
 
     printf("请输入邻接矩阵（用INF表示无穷大）：\n");
     // 读取邻接矩阵
@@ -93,8 +83,8 @@ int main() {
         }
     }
 
-    CreateAdj(&G, adjacencyMatrix, n, e);  // 根据邻接矩阵创建邻接表
-    DispAdj(&G);                           // 打印邻接表
+    CreateAdj(&G, adjacencyMatrix, n, e);
+    DispAdj(&G);
 
     return 0;
 }
