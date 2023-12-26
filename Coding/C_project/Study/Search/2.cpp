@@ -26,9 +26,9 @@ int main() {
     int target = 7;
     int index = BinarySearch(R, n, target);
     if (index != -1) {
-        printf("关键字 %d 在顺序表中的位置为 %d\n", target, index);
+        printf("%d 在顺序表中的位置为 %d\n", target, index);
     } else {
-        printf("关键字 %d 未找到\n", target);
+        printf("%d 没找到\n", target);
     }
     return 0;
 }
